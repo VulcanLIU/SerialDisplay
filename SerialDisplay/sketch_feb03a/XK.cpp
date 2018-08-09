@@ -12,7 +12,7 @@ void XK::setName(String val)
 {
  if (name == "naozi")
 	{
-		name == "xukai";
+		name = "xukai";
 	}
 	else{name = val;}
 
@@ -20,8 +20,8 @@ void XK::setName(String val)
 
 // default constructor
 XK::XK()
-{
-	name == "KX";
+{                                   
+	name = "KX";                    //xiaolaji¡¢
 } //XK
 
  XK::XK(String str)
