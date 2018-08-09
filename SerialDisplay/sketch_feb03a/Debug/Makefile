@@ -65,6 +65,7 @@ C_SRCS +=  \
 ../src/libraries/SPI/src/SPI.cpp \
 ../src/libraries/Wire/src/utility/twi.c \
 ../src/libraries/Wire/src/Wire.cpp \
+../Timer1.cpp \
 ../XK.cpp
 
 
@@ -84,6 +85,7 @@ src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o \
 src/libraries/SPI/src/SPI.o \
 src/libraries/Wire/src/utility/twi.o \
 src/libraries/Wire/src/Wire.o \
+Timer1.o \
 XK.o
 
 OBJS_AS_ARGS +=  \
@@ -96,6 +98,7 @@ src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o \
 src/libraries/SPI/src/SPI.o \
 src/libraries/Wire/src/utility/twi.o \
 src/libraries/Wire/src/Wire.o \
+Timer1.o \
 XK.o
 
 C_DEPS +=  \
@@ -108,6 +111,7 @@ src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.d \
 src/libraries/SPI/src/SPI.d \
 src/libraries/Wire/src/utility/twi.d \
 src/libraries/Wire/src/Wire.d \
+Timer1.d \
 XK.d
 
 C_DEPS_AS_ARGS +=  \
@@ -120,6 +124,7 @@ src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.d \
 src/libraries/SPI/src/SPI.d \
 src/libraries/Wire/src/utility/twi.d \
 src/libraries/Wire/src/Wire.d \
+Timer1.d \
 XK.d
 
 OUTPUT_FILE_PATH +=sketch_feb03a.elf
@@ -131,12 +136,14 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 LIB_DEP+=  \
-I:/atmel\ studio/led2/SerialDisplay/SerialDisplay/ArduinoCore/Debug/libArduinoCore.a
+G:/SerialDisplay2/SerialDisplay/ArduinoCore/Debug/libArduinoCore.a
 
 LINKER_SCRIPT_DEP+= 
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 
@@ -232,7 +239,7 @@ all: $(OUTPUT_FILE_PATH) $(ADDITIONAL_DEPENDENCIES)
 $(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(OUTPUT_FILE_DEP) $(LIB_DEP) $(LINKER_SCRIPT_DEP)
 	@echo Building target: $@
 	@echo Invoking: AVR8/GNU Linker : 4.9.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -Wl,-Map="sketch_feb03a.map" -Wl,--start-group -Wl,-lm -Wl,-lArduinoCore  -Wl,--end-group -Wl,-L"I:\atmel studio\led2\SerialDisplay\SerialDisplay\ArduinoCore\Debug"  -Wl,--gc-sections -mmcu=atmega328p -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.106\gcc\dev\atmega328p" -Os  
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -Wl,-Map="sketch_feb03a.map" -Wl,--start-group -Wl,-lm -Wl,-lArduinoCore  -Wl,--end-group -Wl,-L"G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug"  -Wl,--gc-sections -mmcu=atmega328p -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.106\gcc\dev\atmega328p" -Os  
 	@echo Finished building target: $@
 	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "sketch_feb03a.elf" "sketch_feb03a.hex"
 	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "sketch_feb03a.elf" "sketch_feb03a.eep" || exit 0
