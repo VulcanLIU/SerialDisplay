@@ -18,13 +18,13 @@ Buff::Buff()
 
 void Buff::onRecived()
 {
-	while(Serial.available())
+	while(Serial.available()>0)
 	{
 		char c = Serial.read();
 		if (c =='\n')
 		{
 			_buff.toUpperCase();
-			
+			Serial.println(_buff);
 			//上电自检数据
 			if (_buff.startsWith("INITING"))
 			{
@@ -34,7 +34,7 @@ void Buff::onRecived()
 			{
 				STR = _buff.substring(4);
 				buff += STR;
-				buff += '\n';
+				_buff = "";
 			}
 			//工作状态数据
 			if(_buff.startsWith("INFORMATION"))
@@ -44,20 +44,26 @@ void Buff::onRecived()
 			if (_buff.startsWith("WKST:")>0)
 			{
 				WKST = _buff.substring(5);
+				_buff = "";
 			}
 			//位置姿势数据
 			if (_buff.startsWith("XYP:"))
 			{
 				XYP = _buff.substring(4);
+				_buff = "";
 			}
 			//状态数据
 			if (_buff.startsWith("MSG:"))
 			{
 				Msg = _buff.substring(4);
+				_buff = "";
 			}
 			if(_buff.startsWith("OK"))
 			{
-				buff = WKST+'\n'+XYP+'\n'+Msg+'\n';
+				buff += WKST;
+				buff += XYP;
+				buff += Msg;
+				_buff = "";
 			}
 			_buff = "";
 		}

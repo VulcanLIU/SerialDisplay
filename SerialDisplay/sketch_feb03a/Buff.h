@@ -18,9 +18,11 @@ public:
 	void onRecived();
 	String getBuff();
 	uint8_t mode = 0;
+	String buff = "";
+	
 protected:
 private:
-	String buff = "";
+	
 	String STR = "";
 	String WKST = "";
 	String XYP = "";

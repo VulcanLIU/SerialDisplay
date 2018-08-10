@@ -11,11 +11,11 @@ G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
                               src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o (_ZN5Print5writeEPKhj)
 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                              Sketch.o (delay)
+                              Sketch.o (millis)
 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
                               src/libraries/Adafruit-GFX-Library-master/Adafruit_SPITFT.o (pinMode)
 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                              Buff.o (_ZN6StringD2Ev)
+                              Buff.o (_ZN6StringD1Ev)
 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
                               G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o) (yield)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libm.a(addsf3.o)
@@ -175,6 +175,8 @@ Discarded input sections
  .text          0x00000000        0x0 Buff.o
  .data          0x00000000        0x0 Buff.o
  .bss           0x00000000        0x0 Buff.o
+ .text._ZN4Buff7getBuffEv
+                0x00000000       0x16 Buff.o
  .text          0x00000000        0x0 Sketch.o
  .data          0x00000000        0x0 Sketch.o
  .bss           0x00000000        0x0 Sketch.o
@@ -542,14 +544,10 @@ Discarded input sections
                 0x00000000       0x14 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print7printlnEPK19__FlashStringHelper
                 0x00000000       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .text._ZN5Print7printlnEPKc
-                0x00000000       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print7printlnEc
                 0x00000000       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print7printlnERK9Printable
                 0x00000000       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .text._ZN5Print11printNumberEmh
-                0x00000000       0xa8 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print5printEli
                 0x00000000       0x94 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print5printEii
@@ -558,8 +556,6 @@ Discarded input sections
                 0x00000000       0x2e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print7printlnEli
                 0x00000000       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .text._ZN5Print5printEmi
-                0x00000000       0x1a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print5printEhi
                 0x00000000        0xe G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print7printlnEhi
@@ -581,7 +577,6 @@ Discarded input sections
  .text          0x00000000        0x0 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .data          0x00000000        0x0 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .bss           0x00000000        0x0 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .text.millis   0x00000000       0x18 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .text.delayMicroseconds
                 0x00000000       0x16 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .text          0x00000000        0x0 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
@@ -641,8 +636,12 @@ Discarded input sections
                 0x00000000       0x62 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
  .text._ZN6String6concatEPK19__FlashStringHelper
                 0x00000000       0x60 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+ .text._ZplRK15StringSumHelperRK6String
+                0x00000000       0x26 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
  .text._ZplRK15StringSumHelperPKc
                 0x00000000       0x32 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+ .text._ZplRK15StringSumHelperc
+                0x00000000       0x1c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
  .text._ZplRK15StringSumHelperh
                 0x00000000       0x1c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
  .text._ZplRK15StringSumHelperi
@@ -1355,7 +1354,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x3bd2
+.text           0x00000000     0x3cd2
  *(.vectors)
  .vectors       0x00000000       0x68 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.0.106/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -1464,437 +1463,436 @@ END GROUP
                 0x00000614       0x5a Buff.o
                 0x00000614                _ZN4BuffC2Ev
                 0x00000614                _ZN4BuffC1Ev
- .text._ZN4Buff7getBuffEv
-                0x0000066e       0x16 Buff.o
-                0x0000066e                _ZN4Buff7getBuffEv
  .text._ZN4Buff9onRecivedEv
-                0x00000684      0x2ce Buff.o
-                0x00000684                _ZN4Buff9onRecivedEv
- .text._Z2UIv   0x00000952       0x62 Sketch.o
-                0x00000952                _Z2UIv
- .text.setup    0x000009b4       0x66 Sketch.o
-                0x000009b4                setup
- .text.loop     0x00000a1a        0x2 Sketch.o
-                0x00000a1a                loop
- .text._Z11serialEventv
-                0x00000a1c        0x8 Sketch.o
-                0x00000a1c                _Z11serialEventv
+                0x0000066e      0x2e0 Buff.o
+                0x0000066e                _ZN4Buff9onRecivedEv
+ .text._Z2UIv   0x0000094e        0x2 Sketch.o
+                0x0000094e                _Z2UIv
+ .text.setup    0x00000950       0xac Sketch.o
+                0x00000950                setup
+ .text.loop     0x000009fc       0x6c Sketch.o
+                0x000009fc                loop
  .text.startup._GLOBAL__sub_I_display
-                0x00000a24       0x60 Sketch.o
+                0x00000a68       0x60 Sketch.o
  .text.exit._GLOBAL__sub_D_display
-                0x00000a84       0x40 Sketch.o
+                0x00000ac8       0x40 Sketch.o
  .text._ZN5Print17availableForWriteEv
-                0x00000ac4        0x6 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000ac4                _ZN5Print17availableForWriteEv
+                0x00000b08        0x6 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000b08                _ZN5Print17availableForWriteEv
  .text._ZN5Print5flushEv
-                0x00000aca        0x2 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000aca                _ZN5Print5flushEv
+                0x00000b0e        0x2 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000b0e                _ZN5Print5flushEv
  .text._ZN12Adafruit_GFX9writeLineEiiiij
-                0x00000acc      0x154 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000acc                _ZN12Adafruit_GFX9writeLineEiiiij
+                0x00000b10      0x154 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000b10                _ZN12Adafruit_GFX9writeLineEiiiij
  .text._ZN12Adafruit_GFX10startWriteEv
-                0x00000c20        0x2 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000c20                _ZN12Adafruit_GFX10startWriteEv
+                0x00000c64        0x2 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000c64                _ZN12Adafruit_GFX10startWriteEv
  .text._ZN12Adafruit_GFX10writePixelEiij
-                0x00000c22        0xe src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000c22                _ZN12Adafruit_GFX10writePixelEiij
+                0x00000c66        0xe src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000c66                _ZN12Adafruit_GFX10writePixelEiij
  .text._ZN12Adafruit_GFX14writeFastVLineEiiij
-                0x00000c30       0x18 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000c30                _ZN12Adafruit_GFX14writeFastVLineEiiij
+                0x00000c74       0x18 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000c74                _ZN12Adafruit_GFX14writeFastVLineEiiij
  .text._ZN12Adafruit_GFX14writeFastHLineEiiij
-                0x00000c48       0x18 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000c48                _ZN12Adafruit_GFX14writeFastHLineEiiij
+                0x00000c8c       0x18 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000c8c                _ZN12Adafruit_GFX14writeFastHLineEiiij
  .text._ZN12Adafruit_GFX13writeFillRectEiiiij
-                0x00000c60       0x20 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000c60                _ZN12Adafruit_GFX13writeFillRectEiiiij
+                0x00000ca4       0x20 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000ca4                _ZN12Adafruit_GFX13writeFillRectEiiiij
  .text._ZN12Adafruit_GFX8endWriteEv
-                0x00000c80        0x2 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000c80                _ZN12Adafruit_GFX8endWriteEv
+                0x00000cc4        0x2 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000cc4                _ZN12Adafruit_GFX8endWriteEv
  .text._ZN12Adafruit_GFX13drawFastVLineEiiij
-                0x00000c82       0x8a src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000c82                _ZN12Adafruit_GFX13drawFastVLineEiiij
+                0x00000cc6       0x8a src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000cc6                _ZN12Adafruit_GFX13drawFastVLineEiiij
  .text._ZN12Adafruit_GFX13drawFastHLineEiiij
-                0x00000d0c       0x88 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000d0c                _ZN12Adafruit_GFX13drawFastHLineEiiij
+                0x00000d50       0x88 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000d50                _ZN12Adafruit_GFX13drawFastHLineEiiij
  .text._ZN12Adafruit_GFX8fillRectEiiiij
-                0x00000d94       0xa0 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000d94                _ZN12Adafruit_GFX8fillRectEiiiij
+                0x00000dd8       0xa0 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000dd8                _ZN12Adafruit_GFX8fillRectEiiiij
  .text._ZN12Adafruit_GFX10fillScreenEj
-                0x00000e34       0x3c src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000e34                _ZN12Adafruit_GFX10fillScreenEj
+                0x00000e78       0x3c src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000e78                _ZN12Adafruit_GFX10fillScreenEj
  .text._ZN12Adafruit_GFX8drawLineEiiiij
-                0x00000e70       0xee src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000e70                _ZN12Adafruit_GFX8drawLineEiiiij
+                0x00000eb4       0xee src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000eb4                _ZN12Adafruit_GFX8drawLineEiiiij
  .text._ZN12Adafruit_GFX8drawRectEiiiij
-                0x00000f5e       0xbe src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00000f5e                _ZN12Adafruit_GFX8drawRectEiiiij
+                0x00000fa2       0xbe src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000fa2                _ZN12Adafruit_GFX8drawRectEiiiij
  .text._ZN12Adafruit_GFX13invertDisplayEb
-                0x0000101c        0x2 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x0000101c                _ZN12Adafruit_GFX13invertDisplayEb
+                0x00001060        0x2 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00001060                _ZN12Adafruit_GFX13invertDisplayEb
  .text._ZN12Adafruit_GFX11setRotationEh
-                0x0000101e       0x2a src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x0000101e                _ZN12Adafruit_GFX11setRotationEh
+                0x00001062       0x2a src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00001062                _ZN12Adafruit_GFX11setRotationEh
  .text._ZN12Adafruit_GFXC2Eii
-                0x00001048       0x42 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00001048                _ZN12Adafruit_GFXC2Eii
-                0x00001048                _ZN12Adafruit_GFXC1Eii
+                0x0000108c       0x42 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x0000108c                _ZN12Adafruit_GFXC2Eii
+                0x0000108c                _ZN12Adafruit_GFXC1Eii
  .text._ZN12Adafruit_GFX8drawCharEiihjjh
-                0x0000108a      0x42c src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x0000108a                _ZN12Adafruit_GFX8drawCharEiihjjh
+                0x000010ce      0x42c src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x000010ce                _ZN12Adafruit_GFX8drawCharEiihjjh
  .text._ZN12Adafruit_GFX5writeEh
-                0x000014b6      0x1ac src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x000014b6                _ZN12Adafruit_GFX5writeEh
+                0x000014fa      0x1ac src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x000014fa                _ZN12Adafruit_GFX5writeEh
  .text._ZN12Adafruit_GFX9setCursorEii
-                0x00001662        0xc src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00001662                _ZN12Adafruit_GFX9setCursorEii
+                0x000016a6        0xc src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x000016a6                _ZN12Adafruit_GFX9setCursorEii
  .text._ZN12Adafruit_GFX11setTextSizeEh
-                0x0000166e        0xc src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x0000166e                _ZN12Adafruit_GFX11setTextSizeEh
+                0x000016b2        0xc src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x000016b2                _ZN12Adafruit_GFX11setTextSizeEh
  .text._ZN12Adafruit_GFX12setTextColorEj
-                0x0000167a        0xc src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x0000167a                _ZN12Adafruit_GFX12setTextColorEj
+                0x000016be        0xc src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x000016be                _ZN12Adafruit_GFX12setTextColorEj
  .text._ZNK12Adafruit_GFX11getRotationEv
-                0x00001686        0x6 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00001686                _ZNK12Adafruit_GFX11getRotationEv
+                0x000016ca        0x6 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x000016ca                _ZNK12Adafruit_GFX11getRotationEv
  .text._ZNK12Adafruit_GFX5widthEv
-                0x0000168c        0x8 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x0000168c                _ZNK12Adafruit_GFX5widthEv
+                0x000016d0        0x8 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x000016d0                _ZNK12Adafruit_GFX5widthEv
  .text._ZNK12Adafruit_GFX6heightEv
-                0x00001694        0x8 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00001694                _ZNK12Adafruit_GFX6heightEv
+                0x000016d8        0x8 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x000016d8                _ZNK12Adafruit_GFX6heightEv
  .text._ZN16Adafruit_SSD130613drawFastHLineEiiij
-                0x0000169c      0x2b4 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
-                0x0000169c                _ZN16Adafruit_SSD130613drawFastHLineEiiij
+                0x000016e0      0x2b4 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+                0x000016e0                _ZN16Adafruit_SSD130613drawFastHLineEiiij
  .text._ZN16Adafruit_SSD130613drawFastVLineEiiij
-                0x00001950      0x2b4 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
-                0x00001950                _ZN16Adafruit_SSD130613drawFastVLineEiiij
+                0x00001994      0x2b4 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+                0x00001994                _ZN16Adafruit_SSD130613drawFastVLineEiiij
  .text._ZN16Adafruit_SSD13069drawPixelEiij
-                0x00001c04      0x16e src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
-                0x00001c04                _ZN16Adafruit_SSD13069drawPixelEiij
+                0x00001c48      0x16e src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+                0x00001c48                _ZN16Adafruit_SSD13069drawPixelEiij
  .text._ZN16Adafruit_SSD1306C2Ea
-                0x00001d72       0x32 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
-                0x00001d72                _ZN16Adafruit_SSD1306C2Ea
-                0x00001d72                _ZN16Adafruit_SSD1306C1Ea
+                0x00001db6       0x32 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+                0x00001db6                _ZN16Adafruit_SSD1306C2Ea
+                0x00001db6                _ZN16Adafruit_SSD1306C1Ea
  .text._ZN16Adafruit_SSD130612clearDisplayEv
-                0x00001da4       0x16 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
-                0x00001da4                _ZN16Adafruit_SSD130612clearDisplayEv
+                0x00001de8       0x16 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+                0x00001de8                _ZN16Adafruit_SSD130612clearDisplayEv
  .text._ZN16Adafruit_SSD130612fastSPIwriteEh
-                0x00001dba       0x5a src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
-                0x00001dba                _ZN16Adafruit_SSD130612fastSPIwriteEh
+                0x00001dfe       0x5a src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+                0x00001dfe                _ZN16Adafruit_SSD130612fastSPIwriteEh
  .text._ZN16Adafruit_SSD130615ssd1306_commandEh
-                0x00001e14       0x84 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
-                0x00001e14                _ZN16Adafruit_SSD130615ssd1306_commandEh
+                0x00001e58       0x84 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+                0x00001e58                _ZN16Adafruit_SSD130615ssd1306_commandEh
  .text._ZN16Adafruit_SSD13065beginEhhb
-                0x00001e98      0x26a src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
-                0x00001e98                _ZN16Adafruit_SSD13065beginEhhb
+                0x00001edc      0x26a src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+                0x00001edc                _ZN16Adafruit_SSD13065beginEhhb
  .text._ZN16Adafruit_SSD13067displayEv
-                0x00002102      0x102 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
-                0x00002102                _ZN16Adafruit_SSD13067displayEv
+                0x00002146      0x102 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+                0x00002146                _ZN16Adafruit_SSD13067displayEv
  .text._ZN8SPIClass5beginEv
-                0x00002204       0x6c src/libraries/SPI/src/SPI.o
-                0x00002204                _ZN8SPIClass5beginEv
+                0x00002248       0x6c src/libraries/SPI/src/SPI.o
+                0x00002248                _ZN8SPIClass5beginEv
  .text.twi_init
-                0x00002270       0x3c src/libraries/Wire/src/utility/twi.o
-                0x00002270                twi_init
+                0x000022b4       0x3c src/libraries/Wire/src/utility/twi.o
+                0x000022b4                twi_init
  .text.twi_writeTo
-                0x000022ac       0xac src/libraries/Wire/src/utility/twi.o
-                0x000022ac                twi_writeTo
+                0x000022f0       0xac src/libraries/Wire/src/utility/twi.o
+                0x000022f0                twi_writeTo
  .text.twi_transmit
-                0x00002358       0x50 src/libraries/Wire/src/utility/twi.o
-                0x00002358                twi_transmit
+                0x0000239c       0x50 src/libraries/Wire/src/utility/twi.o
+                0x0000239c                twi_transmit
  .text.twi_stop
-                0x000023a8       0x14 src/libraries/Wire/src/utility/twi.o
-                0x000023a8                twi_stop
+                0x000023ec       0x14 src/libraries/Wire/src/utility/twi.o
+                0x000023ec                twi_stop
  .text.twi_releaseBus
-                0x000023bc        0xc src/libraries/Wire/src/utility/twi.o
-                0x000023bc                twi_releaseBus
+                0x00002400        0xc src/libraries/Wire/src/utility/twi.o
+                0x00002400                twi_releaseBus
  .text.__vector_24
-                0x000023c8      0x25a src/libraries/Wire/src/utility/twi.o
-                0x000023c8                __vector_24
+                0x0000240c      0x25a src/libraries/Wire/src/utility/twi.o
+                0x0000240c                __vector_24
  .text._ZN7TwoWire9availableEv
-                0x00002622       0x10 src/libraries/Wire/src/Wire.o
-                0x00002622                _ZN7TwoWire9availableEv
+                0x00002666       0x10 src/libraries/Wire/src/Wire.o
+                0x00002666                _ZN7TwoWire9availableEv
  .text._ZN7TwoWire4readEv
-                0x00002632       0x28 src/libraries/Wire/src/Wire.o
-                0x00002632                _ZN7TwoWire4readEv
+                0x00002676       0x28 src/libraries/Wire/src/Wire.o
+                0x00002676                _ZN7TwoWire4readEv
  .text._ZN7TwoWire4peekEv
-                0x0000265a       0x1e src/libraries/Wire/src/Wire.o
-                0x0000265a                _ZN7TwoWire4peekEv
+                0x0000269e       0x1e src/libraries/Wire/src/Wire.o
+                0x0000269e                _ZN7TwoWire4peekEv
  .text._ZN7TwoWire5flushEv
-                0x00002678        0x2 src/libraries/Wire/src/Wire.o
-                0x00002678                _ZN7TwoWire5flushEv
+                0x000026bc        0x2 src/libraries/Wire/src/Wire.o
+                0x000026bc                _ZN7TwoWire5flushEv
  .text._ZN7TwoWire5writeEPKhj
-                0x0000267a       0x60 src/libraries/Wire/src/Wire.o
-                0x0000267a                _ZN7TwoWire5writeEPKhj
+                0x000026be       0x60 src/libraries/Wire/src/Wire.o
+                0x000026be                _ZN7TwoWire5writeEPKhj
  .text._ZN7TwoWire5writeEh
-                0x000026da       0x5e src/libraries/Wire/src/Wire.o
-                0x000026da                _ZN7TwoWire5writeEh
+                0x0000271e       0x5e src/libraries/Wire/src/Wire.o
+                0x0000271e                _ZN7TwoWire5writeEh
  .text._ZN7TwoWireC2Ev
-                0x00002738       0x20 src/libraries/Wire/src/Wire.o
-                0x00002738                _ZN7TwoWireC1Ev
-                0x00002738                _ZN7TwoWireC2Ev
+                0x0000277c       0x20 src/libraries/Wire/src/Wire.o
+                0x0000277c                _ZN7TwoWireC1Ev
+                0x0000277c                _ZN7TwoWireC2Ev
  .text._ZN7TwoWire5beginEv
-                0x00002758       0x14 src/libraries/Wire/src/Wire.o
-                0x00002758                _ZN7TwoWire5beginEv
+                0x0000279c       0x14 src/libraries/Wire/src/Wire.o
+                0x0000279c                _ZN7TwoWire5beginEv
  .text._ZN7TwoWire17beginTransmissionEh
-                0x0000276c       0x14 src/libraries/Wire/src/Wire.o
-                0x0000276c                _ZN7TwoWire17beginTransmissionEh
+                0x000027b0       0x14 src/libraries/Wire/src/Wire.o
+                0x000027b0                _ZN7TwoWire17beginTransmissionEh
  .text._ZN7TwoWire17beginTransmissionEi
-                0x00002780        0x4 src/libraries/Wire/src/Wire.o
-                0x00002780                _ZN7TwoWire17beginTransmissionEi
+                0x000027c4        0x4 src/libraries/Wire/src/Wire.o
+                0x000027c4                _ZN7TwoWire17beginTransmissionEi
  .text._ZN7TwoWire15endTransmissionEh
-                0x00002784       0x26 src/libraries/Wire/src/Wire.o
-                0x00002784                _ZN7TwoWire15endTransmissionEh
+                0x000027c8       0x26 src/libraries/Wire/src/Wire.o
+                0x000027c8                _ZN7TwoWire15endTransmissionEh
  .text._ZN7TwoWire15endTransmissionEv
-                0x000027aa        0x6 src/libraries/Wire/src/Wire.o
-                0x000027aa                _ZN7TwoWire15endTransmissionEv
+                0x000027ee        0x6 src/libraries/Wire/src/Wire.o
+                0x000027ee                _ZN7TwoWire15endTransmissionEv
  .text.startup._GLOBAL__sub_I__ZN7TwoWire8rxBufferE
-                0x000027b0        0x8 src/libraries/Wire/src/Wire.o
+                0x000027f4        0x8 src/libraries/Wire/src/Wire.o
  .text._ZL7nothingv
-                0x000027b8        0x2 Timer1.o
+                0x000027fc        0x2 Timer1.o
  .text._ZN6Timer116select_prescalerEi
-                0x000027ba       0xc8 Timer1.o
-                0x000027ba                _ZN6Timer116select_prescalerEi
+                0x000027fe       0xc8 Timer1.o
+                0x000027fe                _ZN6Timer116select_prescalerEi
  .text._ZN6Timer1C2Ev
-                0x00002882       0x2a Timer1.o
-                0x00002882                _ZN6Timer1C1Ev
-                0x00002882                _ZN6Timer1C2Ev
+                0x000028c6       0x2a Timer1.o
+                0x000028c6                _ZN6Timer1C1Ev
+                0x000028c6                _ZN6Timer1C2Ev
  .text._ZN6Timer17setModeE6Stringi
-                0x000028ac       0xe0 Timer1.o
-                0x000028ac                _ZN6Timer17setModeE6Stringi
+                0x000028f0       0xe0 Timer1.o
+                0x000028f0                _ZN6Timer17setModeE6Stringi
  .text._ZN6Timer1C2E6Stringi
-                0x0000298c       0x8a Timer1.o
-                0x0000298c                _ZN6Timer1C2E6Stringi
-                0x0000298c                _ZN6Timer1C1E6Stringi
+                0x000029d0       0x8a Timer1.o
+                0x000029d0                _ZN6Timer1C2E6Stringi
+                0x000029d0                _ZN6Timer1C1E6Stringi
  .text._ZN6Timer115attachInterruptEPFvvE
-                0x00002a16        0xa Timer1.o
-                0x00002a16                _ZN6Timer115attachInterruptEPFvvE
+                0x00002a5a        0xa Timer1.o
+                0x00002a5a                _ZN6Timer115attachInterruptEPFvvE
  .text._ZN6Timer1D2Ev
-                0x00002a20        0x4 Timer1.o
-                0x00002a20                _ZN6Timer1D1Ev
-                0x00002a20                _ZN6Timer1D2Ev
+                0x00002a64        0x4 Timer1.o
+                0x00002a64                _ZN6Timer1D1Ev
+                0x00002a64                _ZN6Timer1D2Ev
  .text.__vector_11
-                0x00002a24       0x4e Timer1.o
-                0x00002a24                __vector_11
+                0x00002a68       0x4e Timer1.o
+                0x00002a68                __vector_11
  .text._ZN2XKC2Ev
-                0x00002a72       0x1c XK.o
-                0x00002a72                _ZN2XKC1Ev
-                0x00002a72                _ZN2XKC2Ev
+                0x00002ab6       0x1c XK.o
+                0x00002ab6                _ZN2XKC1Ev
+                0x00002ab6                _ZN2XKC2Ev
  .text._ZN2XKD2Ev
-                0x00002a8e        0x4 XK.o
-                0x00002a8e                _ZN2XKD1Ev
-                0x00002a8e                _ZN2XKD2Ev
+                0x00002ad2        0x4 XK.o
+                0x00002ad2                _ZN2XKD1Ev
+                0x00002ad2                _ZN2XKD2Ev
  .text.__cxa_pure_virtual
-                0x00002a92        0x4 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
-                0x00002a92                __cxa_pure_virtual
+                0x00002ad6        0x4 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+                0x00002ad6                __cxa_pure_virtual
  .text._ZN14HardwareSerial9availableEv
-                0x00002a96       0x18 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00002a96                _ZN14HardwareSerial9availableEv
+                0x00002ada       0x18 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002ada                _ZN14HardwareSerial9availableEv
  .text._ZN14HardwareSerial4peekEv
-                0x00002aae       0x1c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00002aae                _ZN14HardwareSerial4peekEv
+                0x00002af2       0x1c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002af2                _ZN14HardwareSerial4peekEv
  .text._ZN14HardwareSerial4readEv
-                0x00002aca       0x28 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00002aca                _ZN14HardwareSerial4readEv
+                0x00002b0e       0x28 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002b0e                _ZN14HardwareSerial4readEv
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x00002af2       0x1e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00002af2                _ZN14HardwareSerial17availableForWriteEv
+                0x00002b36       0x1e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002b36                _ZN14HardwareSerial17availableForWriteEv
  .text._Z14serialEventRunv
-                0x00002b10       0x1c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00002b10                _Z14serialEventRunv
+                0x00002b54       0x1c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002b54                _Z14serialEventRunv
  .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
-                0x00002b2c       0x42 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00002b2c                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x00002b70       0x42 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002b70                _ZN14HardwareSerial17_tx_udr_empty_irqEv
  .text._ZN14HardwareSerial5flushEv
-                0x00002b6e       0x44 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00002b6e                _ZN14HardwareSerial5flushEv
+                0x00002bb2       0x44 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002bb2                _ZN14HardwareSerial5flushEv
  .text._ZN14HardwareSerial5writeEh
-                0x00002bb2       0x8e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00002bb2                _ZN14HardwareSerial5writeEh
+                0x00002bf6       0x8e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002bf6                _ZN14HardwareSerial5writeEh
  .text._ZN14HardwareSerial5beginEmh
-                0x00002c40       0xca G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00002c40                _ZN14HardwareSerial5beginEmh
+                0x00002c84       0xca G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002c84                _ZN14HardwareSerial5beginEmh
  .text.__vector_18
-                0x00002d0a       0x64 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00002d0a                __vector_18
+                0x00002d4e       0x64 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00002d4e                __vector_18
  .text.__vector_19
-                0x00002d6e       0x4c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00002d6e                __vector_19
+                0x00002db2       0x4c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00002db2                __vector_19
  .text._Z17Serial0_availablev
-                0x00002dba       0x14 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00002dba                _Z17Serial0_availablev
+                0x00002dfe       0x14 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00002dfe                _Z17Serial0_availablev
  .text.startup._GLOBAL__sub_I___vector_18
-                0x00002dce       0x5a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00002e12       0x5a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .text.initVariant
-                0x00002e28        0x2 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
-                0x00002e28                initVariant
+                0x00002e6c        0x2 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x00002e6c                initVariant
  .text.startup.main
-                0x00002e2a       0x1e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
-                0x00002e2a                main
+                0x00002e6e       0x1e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x00002e6e                main
  .text._ZN5Print5writeEPKhj
-                0x00002e48       0x56 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00002e48                _ZN5Print5writeEPKhj
+                0x00002e8c       0x56 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00002e8c                _ZN5Print5writeEPKhj
  .text._ZN5Print5writeEPKc
-                0x00002e9e       0x2a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00002e9e                _ZN5Print5writeEPKc
+                0x00002ee2       0x2a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00002ee2                _ZN5Print5writeEPKc
  .text._ZN5Print5printERK6String
-                0x00002ec8       0x1c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00002ec8                _ZN5Print5printERK6String
+                0x00002f0c       0x1c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00002f0c                _ZN5Print5printERK6String
  .text._ZN5Print7printlnEv
-                0x00002ee4        0x8 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00002ee4                _ZN5Print7printlnEv
+                0x00002f28        0x8 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00002f28                _ZN5Print7printlnEv
  .text._ZN5Print7printlnERK6String
-                0x00002eec       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00002eec                _ZN5Print7printlnERK6String
+                0x00002f30       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00002f30                _ZN5Print7printlnERK6String
+ .text._ZN5Print7printlnEPKc
+                0x00002f54       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00002f54                _ZN5Print7printlnEPKc
+ .text._ZN5Print11printNumberEmh
+                0x00002f78       0xa8 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00002f78                _ZN5Print11printNumberEmh
+ .text._ZN5Print5printEmi
+                0x00003020       0x1a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00003020                _ZN5Print5printEmi
  .text.__vector_16
-                0x00002f10       0x94 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00002f10                __vector_16
- .text.micros   0x00002fa4       0x4a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00002fa4                micros
- .text.delay    0x00002fee       0x78 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00002fee                delay
- .text.init     0x00003066       0x76 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00003066                init
+                0x0000303a       0x94 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x0000303a                __vector_16
+ .text.millis   0x000030ce       0x18 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x000030ce                millis
+ .text.micros   0x000030e6       0x4a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x000030e6                micros
+ .text.delay    0x00003130       0x78 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00003130                delay
+ .text.init     0x000031a8       0x76 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x000031a8                init
  .text.turnOffPWM
-                0x000030dc       0x52 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .text.pinMode  0x0000312e       0x78 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x0000312e                pinMode
+                0x0000321e       0x52 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x00003270       0x78 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00003270                pinMode
  .text.digitalWrite
-                0x000031a6       0x60 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x000031a6                digitalWrite
+                0x000032e8       0x60 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000032e8                digitalWrite
  .text._ZNK6String14StringIfHelperEv
-                0x00003206        0x2 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003206                _ZNK6String14StringIfHelperEv
+                0x00003348        0x2 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003348                _ZNK6String14StringIfHelperEv
  .text._ZN6StringD2Ev
-                0x00003208        0xa G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003208                _ZN6StringD2Ev
-                0x00003208                _ZN6StringD1Ev
+                0x0000334a        0xa G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x0000334a                _ZN6StringD2Ev
+                0x0000334a                _ZN6StringD1Ev
  .text._ZN6String10invalidateEv
-                0x00003212       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003212                _ZN6String10invalidateEv
+                0x00003354       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003354                _ZN6String10invalidateEv
  .text._ZN6String12changeBufferEj
-                0x00003236       0x34 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003236                _ZN6String12changeBufferEj
+                0x00003378       0x34 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003378                _ZN6String12changeBufferEj
  .text._ZN6String7reserveEj
-                0x0000326a       0x38 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x0000326a                _ZN6String7reserveEj
+                0x000033ac       0x38 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x000033ac                _ZN6String7reserveEj
  .text._ZN6String4copyEPKcj
-                0x000032a2       0x42 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x000032a2                _ZN6String4copyEPKcj
+                0x000033e4       0x42 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x000033e4                _ZN6String4copyEPKcj
  .text._ZN6StringC2EPKc
-                0x000032e4       0x2a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x000032e4                _ZN6StringC2EPKc
-                0x000032e4                _ZN6StringC1EPKc
+                0x00003426       0x2a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003426                _ZN6StringC2EPKc
+                0x00003426                _ZN6StringC1EPKc
  .text._ZN6String4moveERS_
-                0x0000330e       0x7a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x0000330e                _ZN6String4moveERS_
+                0x00003450       0x7a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003450                _ZN6String4moveERS_
  .text._ZN6StringaSERKS_
-                0x00003388       0x2e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003388                _ZN6StringaSERKS_
+                0x000034ca       0x2e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x000034ca                _ZN6StringaSERKS_
  .text._ZN6StringC2ERKS_
-                0x000033b6       0x12 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x000033b6                _ZN6StringC2ERKS_
-                0x000033b6                _ZN6StringC1ERKS_
+                0x000034f8       0x12 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x000034f8                _ZN6StringC2ERKS_
+                0x000034f8                _ZN6StringC1ERKS_
  .text._ZN6StringaSEOS_
-                0x000033c8       0x18 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x000033c8                _ZN6StringaSEOS_
+                0x0000350a       0x18 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x0000350a                _ZN6StringaSEOS_
  .text._ZN6StringaSEPKc
-                0x000033e0       0x2e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x000033e0                _ZN6StringaSEPKc
+                0x00003522       0x2e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003522                _ZN6StringaSEPKc
  .text._ZN6String6concatEPKcj
-                0x0000340e       0x5c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x0000340e                _ZN6String6concatEPKcj
+                0x00003550       0x5c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003550                _ZN6String6concatEPKcj
  .text._ZN6String6concatERKS_
-                0x0000346a        0xe G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x0000346a                _ZN6String6concatERKS_
+                0x000035ac        0xe G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x000035ac                _ZN6String6concatERKS_
  .text._ZN6String6concatEc
-                0x00003478       0x26 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003478                _ZN6String6concatEc
- .text._ZplRK15StringSumHelperRK6String
-                0x0000349e       0x26 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x0000349e                _ZplRK15StringSumHelperRK6String
- .text._ZplRK15StringSumHelperc
-                0x000034c4       0x1c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x000034c4                _ZplRK15StringSumHelperc
+                0x000035ba       0x26 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x000035ba                _ZN6String6concatEc
  .text._ZNK6String6equalsEPKc
-                0x000034e0       0x3e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x000034e0                _ZNK6String6equalsEPKc
+                0x000035e0       0x3e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x000035e0                _ZNK6String6equalsEPKc
  .text._ZNK6String10startsWithERKS_j
-                0x0000351e       0x4c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x0000351e                _ZNK6String10startsWithERKS_j
+                0x0000361e       0x4c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x0000361e                _ZNK6String10startsWithERKS_j
  .text._ZNK6String10startsWithERKS_
-                0x0000356a       0x1e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x0000356a                _ZNK6String10startsWithERKS_
+                0x0000366a       0x1e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x0000366a                _ZNK6String10startsWithERKS_
  .text._ZNK6String9substringEjj
-                0x00003588       0x8c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003588                _ZNK6String9substringEjj
+                0x00003688       0x8c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003688                _ZNK6String9substringEjj
  .text._ZN6String11toUpperCaseEv
-                0x00003614       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003614                _ZN6String11toUpperCaseEv
- .text.__empty  0x00003638        0x2 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
-                0x00003638                yield
+                0x00003714       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003714                _ZN6String11toUpperCaseEv
+ .text.__empty  0x00003738        0x2 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+                0x00003738                yield
  .text.libgcc.div
-                0x0000363a       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
-                0x0000363a                __udivmodsi4
+                0x0000373a       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_udivmodsi4.o)
+                0x0000373a                __udivmodsi4
  .text.libgcc.div
-                0x0000367e       0x2e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodsi4.o)
-                0x0000367e                __divmodsi4
+                0x0000377e       0x2e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_divmodsi4.o)
+                0x0000377e                __divmodsi4
  .text.libgcc.div
-                0x000036ac       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_negsi2.o)
-                0x000036ac                __negsi2
+                0x000037ac       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_negsi2.o)
+                0x000037ac                __negsi2
  .text.libgcc.mul
-                0x000036bc       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
-                0x000036bc                __umulhisi3
+                0x000037bc       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_umulhisi3.o)
+                0x000037bc                __umulhisi3
  .text.libgcc.mul
-                0x000036da        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_usmulhisi3.o)
-                0x000036da                __usmulhisi3
-                0x000036de                __usmulhisi3_tail
- .text.libgcc   0x000036e8        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
-                0x000036e8                __tablejump2__
+                0x000037da        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_usmulhisi3.o)
+                0x000037da                __usmulhisi3
+                0x000037de                __usmulhisi3_tail
+ .text.libgcc   0x000037e8        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_tablejump2.o)
+                0x000037e8                __tablejump2__
  .text.avr-libc
-                0x000036f4      0x25a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x000036f4                malloc
-                0x0000381e                free
+                0x000037f4      0x25a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x000037f4                malloc
+                0x0000391e                free
  .text.avr-libc
-                0x0000394e      0x194 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(realloc.o)
-                0x0000394e                realloc
+                0x00003a4e      0x194 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(realloc.o)
+                0x00003a4e                realloc
  .text.avr-libc
-                0x00003ae2        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(abort.o)
-                0x00003ae2                abort
+                0x00003be2        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(abort.o)
+                0x00003be2                abort
  .text.avr-libc
-                0x00003aec       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(toupper.o)
-                0x00003aec                toupper
+                0x00003bec       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(toupper.o)
+                0x00003bec                toupper
  .text.avr-libc
-                0x00003afc       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(memcpy.o)
-                0x00003afc                memcpy
+                0x00003bfc       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x00003bfc                memcpy
  .text.avr-libc
-                0x00003b0e       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcmp.o)
-                0x00003b0e                strcmp
+                0x00003c0e       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                0x00003c0e                strcmp
  .text.avr-libc
-                0x00003b20        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcpy.o)
-                0x00003b20                strcpy
+                0x00003c20        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strcpy.o)
+                0x00003c20                strcpy
  .text.avr-libc
-                0x00003b2e       0x1c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strncmp.o)
-                0x00003b2e                strncmp
+                0x00003c2e       0x1c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(strncmp.o)
+                0x00003c2e                strncmp
  .text.libgcc.prologue
-                0x00003b4a       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_prologue.o)
-                0x00003b4a                __prologue_saves__
+                0x00003c4a       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_prologue.o)
+                0x00003c4a                __prologue_saves__
  .text.libgcc.prologue
-                0x00003b82       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_epilogue.o)
-                0x00003b82                __epilogue_restores__
-                0x00003bb8                . = ALIGN (0x2)
+                0x00003c82       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_epilogue.o)
+                0x00003c82                __epilogue_restores__
+                0x00003cb8                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00003bb8        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
-                0x00003bb8                _exit
-                0x00003bb8                exit
+ .fini9         0x00003cb8        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+                0x00003cb8                _exit
+                0x00003cb8                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
  *(.fini7)
  *(.fini7)
  *(.fini6)
- .fini6         0x00003bb8       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_dtors.o)
-                0x00003bb8                __do_global_dtors
+ .fini6         0x00003cb8       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_dtors.o)
+                0x00003cb8                __do_global_dtors
  *(.fini6)
  *(.fini5)
  *(.fini5)
@@ -1907,11 +1905,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00003bce        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
+ .fini0         0x00003cce        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00003bd2                _etext = .
+                0x00003cd2                _etext = .
 
-.data           0x00800100      0x4ec load address 0x00003bd2
+.data           0x00800100      0x512 load address 0x00003cd2
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(malloc.o)
@@ -1936,137 +1934,137 @@ END GROUP
                 0x00800522       0x2c Buff.o
                                  0x2d (size before relaxing)
  .rodata.str1.1
-                0x0080054e        0x4 Sketch.o
+                0x0080054e       0x2a Sketch.o
  .rodata._ZTV12Adafruit_GFX
-                0x00800552       0x2c src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
-                0x00800552                _ZTV12Adafruit_GFX
+                0x00800578       0x2c src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00800578                _ZTV12Adafruit_GFX
  .rodata._ZTV16Adafruit_SSD1306
-                0x0080057e       0x2c src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
-                0x0080057e                _ZTV16Adafruit_SSD1306
+                0x008005a4       0x2c src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+                0x008005a4                _ZTV16Adafruit_SSD1306
  .rodata._ZTV7TwoWire
-                0x008005aa       0x12 src/libraries/Wire/src/Wire.o
-                0x008005aa                _ZTV7TwoWire
+                0x008005d0       0x12 src/libraries/Wire/src/Wire.o
+                0x008005d0                _ZTV7TwoWire
  .rodata.str1.1
-                0x008005bc        0x5 Timer1.o
+                0x008005e2        0x5 Timer1.o
  .rodata.str1.1
-                0x008005bc        0xf XK.o
+                0x008005e2        0xf XK.o
                                  0x10 (size before relaxing)
  .rodata._ZTV14HardwareSerial
-                0x008005cb       0x12 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x008005cb                _ZTV14HardwareSerial
+                0x008005f1       0x12 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x008005f1                _ZTV14HardwareSerial
  .rodata.str1.1
-                0x008005dd        0xf G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00800603        0xf G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .rodata.str1.1
-                0x008005ec        0x1 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00800612        0x1 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
  *(.gnu.linkonce.d*)
-                0x008005ee                . = ALIGN (0x2)
-                0x008005ee                _edata = .
-                0x008005ee                PROVIDE (__data_end, .)
+                0x00800614                . = ALIGN (0x2)
+                0x00800614                _edata = .
+                0x00800614                PROVIDE (__data_end, .)
 
-.bss            0x008005ec      0x1d4
-                0x008005ec                PROVIDE (__bss_start, .)
+.bss            0x00800612      0x1d4
+                0x00800612                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.tc        0x008005ec        0xc Sketch.o
-                0x008005ec                tc
- .bss.x         0x008005f8        0x6 Sketch.o
-                0x008005f8                x
- .bss.buff      0x008005fe       0x26 Sketch.o
-                0x008005fe                buff
- .bss.display   0x00800624       0x2e Sketch.o
-                0x00800624                display
+ .bss.tc        0x00800612        0xc Sketch.o
+                0x00800612                tc
+ .bss.x         0x0080061e        0x6 Sketch.o
+                0x0080061e                x
+ .bss.buff      0x00800624       0x26 Sketch.o
+                0x00800624                buff
+ .bss.display   0x0080064a       0x2e Sketch.o
+                0x0080064a                display
  .bss._ZN8SPIClass13interruptSaveE
-                0x00800652        0x1 src/libraries/SPI/src/SPI.o
-                0x00800652                _ZN8SPIClass13interruptSaveE
+                0x00800678        0x1 src/libraries/SPI/src/SPI.o
+                0x00800678                _ZN8SPIClass13interruptSaveE
  .bss._ZN8SPIClass13interruptMaskE
-                0x00800653        0x1 src/libraries/SPI/src/SPI.o
-                0x00800653                _ZN8SPIClass13interruptMaskE
+                0x00800679        0x1 src/libraries/SPI/src/SPI.o
+                0x00800679                _ZN8SPIClass13interruptMaskE
  .bss._ZN8SPIClass13interruptModeE
-                0x00800654        0x1 src/libraries/SPI/src/SPI.o
-                0x00800654                _ZN8SPIClass13interruptModeE
+                0x0080067a        0x1 src/libraries/SPI/src/SPI.o
+                0x0080067a                _ZN8SPIClass13interruptModeE
  .bss._ZN8SPIClass11initializedE
-                0x00800655        0x1 src/libraries/SPI/src/SPI.o
-                0x00800655                _ZN8SPIClass11initializedE
+                0x0080067b        0x1 src/libraries/SPI/src/SPI.o
+                0x0080067b                _ZN8SPIClass11initializedE
  .bss.twi_error
-                0x00800656        0x1 src/libraries/Wire/src/utility/twi.o
+                0x0080067c        0x1 src/libraries/Wire/src/utility/twi.o
  .bss.twi_rxBufferIndex
-                0x00800657        0x1 src/libraries/Wire/src/utility/twi.o
+                0x0080067d        0x1 src/libraries/Wire/src/utility/twi.o
  .bss.twi_rxBuffer
-                0x00800658       0x20 src/libraries/Wire/src/utility/twi.o
+                0x0080067e       0x20 src/libraries/Wire/src/utility/twi.o
  .bss.twi_txBufferLength
-                0x00800678        0x1 src/libraries/Wire/src/utility/twi.o
+                0x0080069e        0x1 src/libraries/Wire/src/utility/twi.o
  .bss.twi_txBufferIndex
-                0x00800679        0x1 src/libraries/Wire/src/utility/twi.o
+                0x0080069f        0x1 src/libraries/Wire/src/utility/twi.o
  .bss.twi_txBuffer
-                0x0080067a       0x20 src/libraries/Wire/src/utility/twi.o
+                0x008006a0       0x20 src/libraries/Wire/src/utility/twi.o
  .bss.twi_masterBufferLength
-                0x0080069a        0x1 src/libraries/Wire/src/utility/twi.o
- .bss.twi_masterBufferIndex
-                0x0080069b        0x1 src/libraries/Wire/src/utility/twi.o
- .bss.twi_masterBuffer
-                0x0080069c       0x20 src/libraries/Wire/src/utility/twi.o
- .bss.twi_onSlaveReceive
-                0x008006bc        0x2 src/libraries/Wire/src/utility/twi.o
- .bss.twi_onSlaveTransmit
-                0x008006be        0x2 src/libraries/Wire/src/utility/twi.o
- .bss.twi_inRepStart
                 0x008006c0        0x1 src/libraries/Wire/src/utility/twi.o
- .bss.twi_sendStop
+ .bss.twi_masterBufferIndex
                 0x008006c1        0x1 src/libraries/Wire/src/utility/twi.o
+ .bss.twi_masterBuffer
+                0x008006c2       0x20 src/libraries/Wire/src/utility/twi.o
+ .bss.twi_onSlaveReceive
+                0x008006e2        0x2 src/libraries/Wire/src/utility/twi.o
+ .bss.twi_onSlaveTransmit
+                0x008006e4        0x2 src/libraries/Wire/src/utility/twi.o
+ .bss.twi_inRepStart
+                0x008006e6        0x1 src/libraries/Wire/src/utility/twi.o
+ .bss.twi_sendStop
+                0x008006e7        0x1 src/libraries/Wire/src/utility/twi.o
  .bss.twi_slarw
-                0x008006c2        0x1 src/libraries/Wire/src/utility/twi.o
+                0x008006e8        0x1 src/libraries/Wire/src/utility/twi.o
  .bss.twi_state
-                0x008006c3        0x1 src/libraries/Wire/src/utility/twi.o
- .bss.Wire      0x008006c4        0xc src/libraries/Wire/src/Wire.o
-                0x008006c4                Wire
+                0x008006e9        0x1 src/libraries/Wire/src/utility/twi.o
+ .bss.Wire      0x008006ea        0xc src/libraries/Wire/src/Wire.o
+                0x008006ea                Wire
  .bss._ZN7TwoWire12transmittingE
-                0x008006d0        0x1 src/libraries/Wire/src/Wire.o
-                0x008006d0                _ZN7TwoWire12transmittingE
+                0x008006f6        0x1 src/libraries/Wire/src/Wire.o
+                0x008006f6                _ZN7TwoWire12transmittingE
  .bss._ZN7TwoWire14txBufferLengthE
-                0x008006d1        0x1 src/libraries/Wire/src/Wire.o
-                0x008006d1                _ZN7TwoWire14txBufferLengthE
+                0x008006f7        0x1 src/libraries/Wire/src/Wire.o
+                0x008006f7                _ZN7TwoWire14txBufferLengthE
  .bss._ZN7TwoWire13txBufferIndexE
-                0x008006d2        0x1 src/libraries/Wire/src/Wire.o
-                0x008006d2                _ZN7TwoWire13txBufferIndexE
+                0x008006f8        0x1 src/libraries/Wire/src/Wire.o
+                0x008006f8                _ZN7TwoWire13txBufferIndexE
  .bss._ZN7TwoWire8txBufferE
-                0x008006d3       0x20 src/libraries/Wire/src/Wire.o
-                0x008006d3                _ZN7TwoWire8txBufferE
+                0x008006f9       0x20 src/libraries/Wire/src/Wire.o
+                0x008006f9                _ZN7TwoWire8txBufferE
  .bss._ZN7TwoWire9txAddressE
-                0x008006f3        0x1 src/libraries/Wire/src/Wire.o
-                0x008006f3                _ZN7TwoWire9txAddressE
+                0x00800719        0x1 src/libraries/Wire/src/Wire.o
+                0x00800719                _ZN7TwoWire9txAddressE
  .bss._ZN7TwoWire14rxBufferLengthE
-                0x008006f4        0x1 src/libraries/Wire/src/Wire.o
-                0x008006f4                _ZN7TwoWire14rxBufferLengthE
+                0x0080071a        0x1 src/libraries/Wire/src/Wire.o
+                0x0080071a                _ZN7TwoWire14rxBufferLengthE
  .bss._ZN7TwoWire13rxBufferIndexE
-                0x008006f5        0x1 src/libraries/Wire/src/Wire.o
-                0x008006f5                _ZN7TwoWire13rxBufferIndexE
+                0x0080071b        0x1 src/libraries/Wire/src/Wire.o
+                0x0080071b                _ZN7TwoWire13rxBufferIndexE
  .bss._ZN7TwoWire8rxBufferE
-                0x008006f6       0x20 src/libraries/Wire/src/Wire.o
-                0x008006f6                _ZN7TwoWire8rxBufferE
- .bss.Serial    0x00800716       0x9d G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00800716                Serial
+                0x0080071c       0x20 src/libraries/Wire/src/Wire.o
+                0x0080071c                _ZN7TwoWire8rxBufferE
+ .bss.Serial    0x0080073c       0x9d G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x0080073c                Serial
  .bss.timer0_fract
-                0x008007b3        0x1 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x008007d9        0x1 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .bss.timer0_millis
-                0x008007b4        0x4 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x008007b4                timer0_millis
+                0x008007da        0x4 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x008007da                timer0_millis
  .bss.timer0_overflow_count
-                0x008007b8        0x4 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x008007b8                timer0_overflow_count
+                0x008007de        0x4 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x008007de                timer0_overflow_count
  *(COMMON)
- COMMON         0x008007bc        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x008007bc                __brkval
-                0x008007be                __flp
-                0x008007c0                PROVIDE (__bss_end, .)
-                0x00003bd2                __data_load_start = LOADADDR (.data)
-                0x000040be                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x008007e2        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x008007e2                __brkval
+                0x008007e4                __flp
+                0x008007e6                PROVIDE (__bss_end, .)
+                0x00003cd2                __data_load_start = LOADADDR (.data)
+                0x000041e4                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008007c0        0x0
+.noinit         0x008007e6        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x008007c0                _end = .
-                0x008007c0                PROVIDE (__heap_start, .)
+                0x008007e6                _end = .
+                0x008007e6                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -2149,188 +2147,188 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0xb80
+.debug_aranges  0x00000000      0xb78
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x30 Buff.o
  .debug_aranges
-                0x00000030       0x48 Sketch.o
+                0x00000030       0x40 Sketch.o
  .debug_aranges
-                0x00000078      0x2a0 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+                0x00000070      0x2a0 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
  .debug_aranges
-                0x00000318       0xb8 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+                0x00000310       0xb8 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
  .debug_aranges
-                0x000003d0       0x38 src/libraries/SPI/src/SPI.o
+                0x000003c8       0x38 src/libraries/SPI/src/SPI.o
  .debug_aranges
-                0x00000408       0x80 src/libraries/Wire/src/utility/twi.o
+                0x00000400       0x80 src/libraries/Wire/src/utility/twi.o
  .debug_aranges
-                0x00000488       0xf8 src/libraries/Wire/src/Wire.o
+                0x00000480       0xf8 src/libraries/Wire/src/Wire.o
  .debug_aranges
-                0x00000580       0x60 Timer1.o
+                0x00000578       0x60 Timer1.o
  .debug_aranges
-                0x000005e0       0x38 XK.o
+                0x000005d8       0x38 XK.o
  .debug_aranges
-                0x00000618       0x28 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+                0x00000610       0x28 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
  .debug_aranges
-                0x00000640       0x68 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00000638       0x68 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
  .debug_aranges
-                0x000006a8       0x48 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000006a0       0x48 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .debug_aranges
-                0x000006f0       0x38 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x000006e8       0x38 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
  .debug_aranges
-                0x00000728      0x100 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000720      0x100 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .debug_aranges
-                0x00000828       0x48 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00000820       0x48 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .debug_aranges
-                0x00000870       0x38 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000868       0x38 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
  .debug_aranges
-                0x000008a8      0x2b8 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x000008a0      0x2b8 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
  .debug_aranges
-                0x00000b60       0x20 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+                0x00000b58       0x20 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x1d246
+.debug_info     0x00000000    0x1d30c
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x1c8c Buff.o
- .debug_info    0x00001c8c     0x1b9c Sketch.o
- .debug_info    0x00003828     0x61b8 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
- .debug_info    0x000099e0     0x23cd src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
- .debug_info    0x0000bdad      0x694 src/libraries/SPI/src/SPI.o
- .debug_info    0x0000c441      0x609 src/libraries/Wire/src/utility/twi.o
- .debug_info    0x0000ca4a     0x27c0 src/libraries/Wire/src/Wire.o
- .debug_info    0x0000f20a     0x179d Timer1.o
- .debug_info    0x000109a7     0x1447 XK.o
- .debug_info    0x00011dee       0x8e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
- .debug_info    0x00011e7c     0x1e35 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_info    0x00013cb1     0x1ac7 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_info    0x00015778      0x231 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_info    0x000159a9     0x2a7c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_info    0x00018425      0x2c8 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_info    0x000186ed      0x5f9 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_info    0x00018ce6     0x4522 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
- .debug_info    0x0001d208       0x3e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_info    0x00000000     0x1c67 Buff.o
+ .debug_info    0x00001c67     0x1c87 Sketch.o
+ .debug_info    0x000038ee     0x61b8 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+ .debug_info    0x00009aa6     0x23cd src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+ .debug_info    0x0000be73      0x694 src/libraries/SPI/src/SPI.o
+ .debug_info    0x0000c507      0x609 src/libraries/Wire/src/utility/twi.o
+ .debug_info    0x0000cb10     0x27c0 src/libraries/Wire/src/Wire.o
+ .debug_info    0x0000f2d0     0x179d Timer1.o
+ .debug_info    0x00010a6d     0x1447 XK.o
+ .debug_info    0x00011eb4       0x8e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_info    0x00011f42     0x1e35 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_info    0x00013d77     0x1ac7 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_info    0x0001583e      0x231 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_info    0x00015a6f     0x2a7c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_info    0x000184eb      0x2c8 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_info    0x000187b3      0x5f9 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_info    0x00018dac     0x4522 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+ .debug_info    0x0001d2ce       0x3e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
-.debug_abbrev   0x00000000     0x3ac5
+.debug_abbrev   0x00000000     0x3a99
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x379 Buff.o
- .debug_abbrev  0x00000379      0x448 Sketch.o
- .debug_abbrev  0x000007c1      0x58f src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
- .debug_abbrev  0x00000d50      0x5b8 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
- .debug_abbrev  0x00001308      0x28c src/libraries/SPI/src/SPI.o
- .debug_abbrev  0x00001594      0x25f src/libraries/Wire/src/utility/twi.o
- .debug_abbrev  0x000017f3      0x5c4 src/libraries/Wire/src/Wire.o
- .debug_abbrev  0x00001db7      0x3ed Timer1.o
- .debug_abbrev  0x000021a4      0x314 XK.o
- .debug_abbrev  0x000024b8       0x5e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
- .debug_abbrev  0x00002516      0x478 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_abbrev  0x0000298e      0x3dd G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_abbrev  0x00002d6b      0x109 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_abbrev  0x00002e74      0x498 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_abbrev  0x0000330c      0x145 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_abbrev  0x00003451      0x15b G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_abbrev  0x000035ac      0x4ef G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
- .debug_abbrev  0x00003a9b       0x2a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_abbrev  0x00000000      0x34a Buff.o
+ .debug_abbrev  0x0000034a      0x44b Sketch.o
+ .debug_abbrev  0x00000795      0x58f src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+ .debug_abbrev  0x00000d24      0x5b8 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+ .debug_abbrev  0x000012dc      0x28c src/libraries/SPI/src/SPI.o
+ .debug_abbrev  0x00001568      0x25f src/libraries/Wire/src/utility/twi.o
+ .debug_abbrev  0x000017c7      0x5c4 src/libraries/Wire/src/Wire.o
+ .debug_abbrev  0x00001d8b      0x3ed Timer1.o
+ .debug_abbrev  0x00002178      0x314 XK.o
+ .debug_abbrev  0x0000248c       0x5e G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_abbrev  0x000024ea      0x478 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_abbrev  0x00002962      0x3dd G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_abbrev  0x00002d3f      0x109 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_abbrev  0x00002e48      0x498 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_abbrev  0x000032e0      0x145 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_abbrev  0x00003425      0x15b G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_abbrev  0x00003580      0x4ef G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+ .debug_abbrev  0x00003a6f       0x2a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
-.debug_line     0x00000000     0x6be1
+.debug_line     0x00000000     0x6c0b
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x00000000      0x2f2 Buff.o
- .debug_line    0x000002f2      0x356 Sketch.o
- .debug_line    0x00000648     0x1e6b src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
- .debug_line    0x000024b3      0xc81 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
- .debug_line    0x00003134      0x320 src/libraries/SPI/src/SPI.o
- .debug_line    0x00003454      0x52e src/libraries/Wire/src/utility/twi.o
- .debug_line    0x00003982      0x5e6 src/libraries/Wire/src/Wire.o
- .debug_line    0x00003f68      0x2d3 Timer1.o
- .debug_line    0x0000423b      0x127 XK.o
- .debug_line    0x00004362       0xbf G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
- .debug_line    0x00004421      0x43b G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_line    0x0000485c      0x2a1 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_line    0x00004afd      0x18a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_line    0x00004c87      0x6b0 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_line    0x00005337      0x2ae G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_line    0x000055e5      0x267 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_line    0x0000584c     0x1354 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
- .debug_line    0x00006ba0       0x41 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_line    0x00000000      0x308 Buff.o
+ .debug_line    0x00000308      0x36a Sketch.o
+ .debug_line    0x00000672     0x1e6b src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+ .debug_line    0x000024dd      0xc81 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+ .debug_line    0x0000315e      0x320 src/libraries/SPI/src/SPI.o
+ .debug_line    0x0000347e      0x52e src/libraries/Wire/src/utility/twi.o
+ .debug_line    0x000039ac      0x5e6 src/libraries/Wire/src/Wire.o
+ .debug_line    0x00003f92      0x2d3 Timer1.o
+ .debug_line    0x00004265      0x127 XK.o
+ .debug_line    0x0000438c       0xbf G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_line    0x0000444b      0x43b G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_line    0x00004886      0x2a1 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_line    0x00004b27      0x18a G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_line    0x00004cb1      0x6b0 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_line    0x00005361      0x2ae G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_line    0x0000560f      0x267 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_line    0x00005876     0x1354 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+ .debug_line    0x00006bca       0x41 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
-.debug_frame    0x00000000     0x2e44
+.debug_frame    0x00000000     0x2e34
  *(.debug_frame)
  .debug_frame   0x00000000       0xb8 Buff.o
- .debug_frame   0x000000b8       0x94 Sketch.o
- .debug_frame   0x0000014c     0x11e4 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
- .debug_frame   0x00001330      0x2e0 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
- .debug_frame   0x00001610       0x5c src/libraries/SPI/src/SPI.o
- .debug_frame   0x0000166c      0x134 src/libraries/Wire/src/utility/twi.o
- .debug_frame   0x000017a0      0x278 src/libraries/Wire/src/Wire.o
- .debug_frame   0x00001a18      0x194 Timer1.o
- .debug_frame   0x00001bac       0x98 XK.o
- .debug_frame   0x00001c44       0x34 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
- .debug_frame   0x00001c78      0x110 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_frame   0x00001d88       0xe0 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_frame   0x00001e68       0x54 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_frame   0x00001ebc      0x3bc G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_frame   0x00002278       0xc4 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_frame   0x0000233c       0x7c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_frame   0x000023b8      0xa68 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
- .debug_frame   0x00002e20       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_frame   0x000000b8       0x84 Sketch.o
+ .debug_frame   0x0000013c     0x11e4 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+ .debug_frame   0x00001320      0x2e0 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+ .debug_frame   0x00001600       0x5c src/libraries/SPI/src/SPI.o
+ .debug_frame   0x0000165c      0x134 src/libraries/Wire/src/utility/twi.o
+ .debug_frame   0x00001790      0x278 src/libraries/Wire/src/Wire.o
+ .debug_frame   0x00001a08      0x194 Timer1.o
+ .debug_frame   0x00001b9c       0x98 XK.o
+ .debug_frame   0x00001c34       0x34 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_frame   0x00001c68      0x110 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_frame   0x00001d78       0xe0 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_frame   0x00001e58       0x54 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_frame   0x00001eac      0x3bc G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_frame   0x00002268       0xc4 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_frame   0x0000232c       0x7c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_frame   0x000023a8      0xa68 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+ .debug_frame   0x00002e10       0x24 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
-.debug_str      0x00000000     0x3fa0
+.debug_str      0x00000000     0x3f8f
  *(.debug_str)
- .debug_str     0x00000000      0xc3c Buff.o
-                                0xd02 (size before relaxing)
- .debug_str     0x00000c3c      0x365 Sketch.o
-                                0xf9e (size before relaxing)
- .debug_str     0x00000fa1      0xfb1 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+ .debug_str     0x00000000      0xbf0 Buff.o
+                                0xcb6 (size before relaxing)
+ .debug_str     0x00000bf0      0x329 Sketch.o
+                                0xfb7 (size before relaxing)
+ .debug_str     0x00000f19      0xff0 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
                                0x1384 (size before relaxing)
- .debug_str     0x00001f52      0x853 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+ .debug_str     0x00001f09      0x853 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
                                 0xce1 (size before relaxing)
- .debug_str     0x000027a5       0xb4 src/libraries/SPI/src/SPI.o
+ .debug_str     0x0000275c       0xb4 src/libraries/SPI/src/SPI.o
                                 0x673 (size before relaxing)
- .debug_str     0x00002859      0x2b9 src/libraries/Wire/src/utility/twi.o
+ .debug_str     0x00002810      0x2b9 src/libraries/Wire/src/utility/twi.o
                                 0x3bc (size before relaxing)
- .debug_str     0x00002b12      0x819 src/libraries/Wire/src/Wire.o
+ .debug_str     0x00002ac9      0x819 src/libraries/Wire/src/Wire.o
                                0x1614 (size before relaxing)
- .debug_str     0x0000332b       0xa3 Timer1.o
+ .debug_str     0x000032e2       0xa3 Timer1.o
                                 0xd24 (size before relaxing)
- .debug_str     0x000033ce       0x33 XK.o
+ .debug_str     0x00003385       0x33 XK.o
                                 0xbae (size before relaxing)
- .debug_str     0x00003401       0x86 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_str     0x000033b8       0x86 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
                                 0x19d (size before relaxing)
- .debug_str     0x00003487      0x2cb G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_str     0x0000343e      0x2e8 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
                                0x132e (size before relaxing)
- .debug_str     0x00003752       0x47 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_str     0x00003726       0x47 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
                                0x1171 (size before relaxing)
- .debug_str     0x00003799       0x43 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_str     0x0000376d       0x43 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
                                 0x2ac (size before relaxing)
- .debug_str     0x000037dc      0x344 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_str     0x000037b0      0x31b G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
                                 0xfe6 (size before relaxing)
- .debug_str     0x00003b20       0x79 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_str     0x00003acb       0x79 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
                                 0x236 (size before relaxing)
- .debug_str     0x00003b99       0x65 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_str     0x00003b44       0x65 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
                                 0x29b (size before relaxing)
- .debug_str     0x00003bfe      0x386 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+ .debug_str     0x00003ba9      0x3ca G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
                                 0xf76 (size before relaxing)
- .debug_str     0x00003f84       0x1c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_str     0x00003f73       0x1c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
                                 0x12b (size before relaxing)
 
-.debug_loc      0x00000000    0x1441b
+.debug_loc      0x00000000    0x1445e
  *(.debug_loc)
- .debug_loc     0x00000000      0x3ac Buff.o
- .debug_loc     0x000003ac       0x90 Sketch.o
- .debug_loc     0x0000043c     0x92b7 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
- .debug_loc     0x000096f3     0x22cc src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
- .debug_loc     0x0000b9bf      0x1e4 src/libraries/SPI/src/SPI.o
- .debug_loc     0x0000bba3      0x449 src/libraries/Wire/src/utility/twi.o
- .debug_loc     0x0000bfec      0xb98 src/libraries/Wire/src/Wire.o
- .debug_loc     0x0000cb84      0x65b Timer1.o
- .debug_loc     0x0000d1df      0x372 XK.o
- .debug_loc     0x0000d551      0x497 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_loc     0x0000d9e8      0x187 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_loc     0x0000db6f     0x1f1c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_loc     0x0000fa8b      0x269 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_loc     0x0000fcf4      0x5e3 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_loc     0x000102d7     0x4144 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+ .debug_loc     0x00000000      0x3ef Buff.o
+ .debug_loc     0x000003ef       0x90 Sketch.o
+ .debug_loc     0x0000047f     0x92b7 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+ .debug_loc     0x00009736     0x22cc src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+ .debug_loc     0x0000ba02      0x1e4 src/libraries/SPI/src/SPI.o
+ .debug_loc     0x0000bbe6      0x449 src/libraries/Wire/src/utility/twi.o
+ .debug_loc     0x0000c02f      0xb98 src/libraries/Wire/src/Wire.o
+ .debug_loc     0x0000cbc7      0x65b Timer1.o
+ .debug_loc     0x0000d222      0x372 XK.o
+ .debug_loc     0x0000d594      0x497 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_loc     0x0000da2b      0x187 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_loc     0x0000dbb2     0x1f1c G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_loc     0x0000face      0x269 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_loc     0x0000fd37      0x5e3 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_loc     0x0001031a     0x4144 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -2350,26 +2348,26 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0xef0
+.debug_ranges   0x00000000      0xee8
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x38 Buff.o
- .debug_ranges  0x00000038       0x38 Sketch.o
- .debug_ranges  0x00000070      0x598 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
- .debug_ranges  0x00000608      0x108 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
- .debug_ranges  0x00000710       0x28 src/libraries/SPI/src/SPI.o
- .debug_ranges  0x00000738       0x70 src/libraries/Wire/src/utility/twi.o
- .debug_ranges  0x000007a8       0xe8 src/libraries/Wire/src/Wire.o
- .debug_ranges  0x00000890       0x50 Timer1.o
- .debug_ranges  0x000008e0       0x58 XK.o
- .debug_ranges  0x00000938       0x18 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
- .debug_ranges  0x00000950       0x70 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_ranges  0x000009c0       0x38 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_ranges  0x000009f8       0x28 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_ranges  0x00000a20      0x138 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_ranges  0x00000b58       0x38 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_ranges  0x00000b90       0x28 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_ranges  0x00000bb8      0x328 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
- .debug_ranges  0x00000ee0       0x10 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_ranges  0x00000038       0x30 Sketch.o
+ .debug_ranges  0x00000068      0x598 src/libraries/Adafruit-GFX-Library-master/Adafruit_GFX.o
+ .debug_ranges  0x00000600      0x108 src/libraries/Adafruit_SSD1306-master/Adafruit_SSD1306.o
+ .debug_ranges  0x00000708       0x28 src/libraries/SPI/src/SPI.o
+ .debug_ranges  0x00000730       0x70 src/libraries/Wire/src/utility/twi.o
+ .debug_ranges  0x000007a0       0xe8 src/libraries/Wire/src/Wire.o
+ .debug_ranges  0x00000888       0x50 Timer1.o
+ .debug_ranges  0x000008d8       0x58 XK.o
+ .debug_ranges  0x00000930       0x18 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_ranges  0x00000948       0x70 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_ranges  0x000009b8       0x38 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_ranges  0x000009f0       0x28 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_ranges  0x00000a18      0x138 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_ranges  0x00000b50       0x38 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_ranges  0x00000b88       0x28 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_ranges  0x00000bb0      0x328 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+ .debug_ranges  0x00000ed8       0x10 G:\SerialDisplay2\SerialDisplay\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
 .debug_macro
  *(.debug_macro)
