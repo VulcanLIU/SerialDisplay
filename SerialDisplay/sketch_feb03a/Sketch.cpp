@@ -13,7 +13,9 @@ XK x;
 //Beginning of Auto generated function prototypes by Atmel Studio
 //End of Auto generated function prototypes by Atmel Studio
 void UI();
-Timer1 tc("CTC",100);
+Timer1 tc("CTC",500);
+bool buffok = false;
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -29,21 +31,27 @@ void setup() {
 }
 
 void loop() {
-	display.setCursor(0,5);
-	display.clearDisplay();
-	display.println(buff.buff);
-	display.display();
-	Serial.println("dddd");
+
+	//Serial.println("dddd");
 			
-	Serial.println(buff.buff);
+	//Serial.println(buff.buff);
 	//Serial.println();
 	buff.onRecived();
-	Serial.print(millis());
-	Serial.println("--------------------------------");
+	
+	//Serial.println("--------------------------------");
 	//delay(20);
+	if (buffok == true)
+	{
+		display.display();
+		buffok = false;
+	}	
 }
 
 void UI()
 {
- 
+	Serial.println(millis());
+ 	display.setCursor(0,5);
+ 	display.clearDisplay();
+ 	display.println(buff.buff);
+ 	buffok = true;
 }
