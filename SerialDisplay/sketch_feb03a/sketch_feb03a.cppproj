@@ -418,6 +418,12 @@
     <Compile Include="include\libraries\Wire\src\Wire.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="POS.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="POS.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Sketch.cpp">
       <SubType>compile</SubType>
     </Compile>

@@ -19,6 +19,8 @@ void POS::realXY(double x1,double y1,double p1)
 	double dy = y1 - _y1;
 	double dp = p1 - _p1;
 	
+	dp = dp*PI/180;
+	
 	double dx1 = dx*cos(dp)-dy*sin(dp);
 	double dy1 = dx*sin(dy)+dy*cos(dp);
 	
